@@ -31,7 +31,7 @@ const Accordian = ( {items} ) => {
     return (
         <div className='ui styled accordion'>
            {renderedItems}
-           <h1>Active Index {activeIndex}</h1>
+           <h3>Active Index {activeIndex}</h3>
         </div>
 
     )
