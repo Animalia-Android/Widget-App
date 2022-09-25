@@ -1,6 +1,8 @@
 import React from 'react'
+import axios from 'axios'
 
 import Accordian from './components/Accordion'
+import Search from './components/Search'
 
 const items = [
     {
@@ -21,6 +23,7 @@ export default () => {
   return (
     <div>
         <h1>Widget App</h1>
+        <Search />
         <Accordian items={items}/>
     </div>
       )
