@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 
 // import Accordian from './components/Accordion';
 // import Search from './components/Search';
-import Dropdown from './components/Dropdown';
+// import Dropdown from './components/Dropdown';
+import Translate from './components/Translate';
 
 // const items = [
 //   {
@@ -19,38 +20,39 @@ import Dropdown from './components/Dropdown';
 //   },
 // ];
 
-const options = [
-  {
-    label: 'The color of Red',
-    value: 'Red',
-  },
-  {
-    label: 'The color of Green',
-    value: 'Green',
-  },
-  {
-    label: 'A shade of Blue',
-    value: 'Blue',
-  },
-];
+// const options = [
+//   {
+//     label: 'The color of Red',
+//     value: 'Red',
+//   },
+//   {
+//     label: 'The color of Green',
+//     value: 'Green',
+//   },
+//   {
+//     label: 'A shade of Blue',
+//     value: 'Blue',
+//   },
+// ];
 
 const App = () => {
-  const [selected, setSelected] = useState(options[0]);
-  const [showDropdown, setShowDropdown] = useState(true)
+//   const [selected, setSelected] = useState(options[0]);
+//   const [showDropdown, setShowDropdown] = useState(true)
 
   return (
     <div>
-      <button onClick={() => setShowDropdown(!showDropdown)}>Toggle Dropdown</button>
+      {/* <button onClick={() => setShowDropdown(!showDropdown)}>Toggle Dropdown</button> */}
       <h1>Widget App</h1>
       {/* <Search /> */}
       {/* <Accordian items={items} /> */}
-      {showDropdown ? 
+      {/* {showDropdown ? 
       <Dropdown
         options={options}
         selected={selected}
         onSelectedChange={setSelected}
       /> : null
-      }
+      } */}
+      <Translate />
     </div>
   );
 };
